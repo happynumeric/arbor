@@ -1,25 +1,36 @@
 
+
 # Arbor 
 
-A simple yet powerful command-line tool to generate graphical or plain text directory trees. Perfect for documentation and project overviews.
+[![Latest Release](https://img.shields.io/github/v/release/happynumeric/arbor?style=for-the-badge)](https://github.com/happynumeric/arbor/releases/latest)
 
-## Features
+A simple command-line tool for Windows to generate a visual, text-based representation of a directory structure.
+It is inspired by commands like `tree` in Linux or `dir /s` in Windows, but with more visual output and convenient filtering options.
+The result is saved to a `tree.txt` file, ideal for project documentation, archives, or sharing folder structure.
 
-- **Graphical Tree Output**: Generates a visually appealing tree structure, similar to the `tree` command.
-- **Plain Text List**: Can output a simple, clean list of file paths.
-- **File Filtering**: Easily filter which files to include using glob patterns (e.g., `*.py`, `*.md`).
-- **Custom Output File**: Specify the name of the output file.
-- **Cross-Platform**: Written in Python, runs on Windows, macOS, and Linux.
+### Example Output:
+```
+/my-project/  
+   ├── index.html
+   ├── css/
+   │   └── style.css
+   └── js/ 
+       ├── app.js 
+       └── utils.js
+```
+## Main Features
+- **Graphical Tree Output**: Displays a clear structure with connectors. 
+- **Plain Text List**: An option `/t` to generate a simple list of file paths. 
+- **File Filtering**: Include only files matching specific patterns (e.g., `*.py`, `*.md`). 
+- **Standalone Executable**: `arbor.exe` is a single file that runs without needing Python installed. 
+- **Built-in Help**: Comprehensive help system (`arbor /?`) and version command (`arbor /v`).
 
-## Installation
+## 🚀 Download & Installation 
+The easiest way to  get Arbor is  to download the latest executable for Windows. 
+A detailed user guide is included in the download. 
+**➡️ [Download the latest version from the Releases page](https://github.com/happynumeric/arbor/releases/latest) ⬅️**
 
-### For End-Users (Recommended)
-
-1.  Go to the [**Releases**](https://github.com/happynumeric/arbor/releases) page.
-2.  Download the latest `arbor.exe` file from the assets.
-3.  Place `arbor.exe` in a folder that is in your system's PATH, or run it directly from its location.
-
-### For Developers
+## For Developers
 
 If you have Python installed, you can run the script directly.
 
@@ -55,10 +66,8 @@ arbor.exe "C:\MyProject" *.py *.md
 ```bash
 arbor.exe /t /o filelist.log
 ```
+
 ## License
+this project is licensed under the MIT License. See the `LICENSE` file for details.
 
-This project is licensed under the MIT License
-
-----------
-
-Copyright (c) 2025 happynumeric.com (hello@happynumeric.com)
+--- Copyright (c) 2025 happynumeric.com (hello@happynumeric.com)
